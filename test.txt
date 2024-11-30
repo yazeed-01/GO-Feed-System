@@ -1,0 +1,35 @@
+{
+  "query": "{ orders { id customerID driverID productID quantity status location totalPrice orderDate } }"
+}
+http://localhost:8080/graphql
+Content-Type
+application/json
+POST
+
+{
+  "query": "{ order(id: 50251) { id customerID driverID productID quantity status location totalPrice orderDate } }"
+}
+
+--------------------------------------------------------------------------------
+
+
+http://localhost:8080/users
+{
+    "username": "testuser",
+    "bio": "This is a test user",
+    "is_celebrity": false
+}
+
+===================================
+
+http://localhost:8080/users
+
+===================================
+
+
+open redis cli 
+and run 
+keys feed:*
+
+
+
